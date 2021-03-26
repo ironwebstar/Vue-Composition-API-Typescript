@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductItem should be a Vue instance 1`] = `
+"<div class=\\"mx-auto pa-5 v-card v-sheet theme--light\\" style=\\"max-width: 344px;\\">
+  <div class=\\"wishlist--wrapper\\"><button type=\\"button\\" class=\\"v-btn v-btn--is-elevated v-btn--fab v-btn--has-bg v-btn--round v-btn--rounded theme--light v-size--small white\\"><span class=\\"v-btn__content\\"><i aria-hidden=\\"true\\" class=\\"v-icon notranslate mdi mdi-star theme--light red--text\\"></i></span></button></div>
+  <div class=\\"v-image v-responsive theme--light\\" style=\\"height: 200px;\\">
+    <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+      <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+    </transition-stub>
+    <div class=\\"v-responsive__content\\"></div>
+  </div>
+  <div class=\\"v-card__title\\">Title</div>
+  <div class=\\"v-card__text\\">
+    <div class=\\"row mx-0 align-center\\">
+      <div class=\\"v-rating v-rating--readonly v-rating--dense\\"><button type=\\"button\\" tabindex=\\"-1\\" aria-label=\\"Rating 1 of 5\\" class=\\"v-icon notranslate v-icon--link mdi mdi-star theme--light amber--text\\" style=\\"font-size: 14px;\\"></button><button type=\\"button\\" tabindex=\\"-1\\" aria-label=\\"Rating 2 of 5\\" class=\\"v-icon notranslate v-icon--link mdi mdi-star theme--light amber--text\\" style=\\"font-size: 14px;\\"></button><button type=\\"button\\" tabindex=\\"-1\\" aria-label=\\"Rating 3 of 5\\" class=\\"v-icon notranslate v-icon--link mdi mdi-star theme--light amber--text\\" style=\\"font-size: 14px;\\"></button><button type=\\"button\\" tabindex=\\"-1\\" aria-label=\\"Rating 4 of 5\\" class=\\"v-icon notranslate v-icon--link mdi mdi-star theme--light amber--text\\" style=\\"font-size: 14px;\\"></button><button type=\\"button\\" tabindex=\\"-1\\" aria-label=\\"Rating 5 of 5\\" class=\\"v-icon notranslate v-icon--link mdi mdi-star-half-full theme--light amber--text\\" style=\\"font-size: 14px;\\"></button></div>
+      <div class=\\"grey--text ml-4\\">
+        4.6 (17)
+      </div>
+    </div>
+  </div>
+  <div class=\\"v-card__subtitle\\">Description</div>
+  <div class=\\"v-card__actions\\"><button type=\\"button\\" class=\\"text-uppercase grey lighten-2 v-btn v-btn--block v-btn--outlined v-btn--rounded v-btn--text theme--light v-size--default black--text\\"><span class=\\"v-btn__content\\">
+      In cart
+    </span></button></div>
+</div>"
+`;

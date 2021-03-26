@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('./font/Lato-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Lato-BoldItalic';
+  src: url('./font/Lato-BoldItalic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url('./font/Lato-Italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('./font/Lato-Regular.ttf') format('ttf');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: 13px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale; /* Font smoothing tweaks for MacOSx in Gecko */
+  -webkit-font-smoothing: antialiased;
+  color: #444a59;
+  background-color: #f8f8f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+p,
+figure {
+  margin: 0;
+  font-weight: normal;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #444a59;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  appearance: none;
+  border: 0;
+}
+
+header,
+footer {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  margin: 30px 0 20px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.block-ellipsis {
+  display: block !important;
+  display: -webkit-box !important;
+  max-width: 100%;
+  height: 130px;
+  margin: 0 auto;
+  // line-height: 1 !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loading-indicator {
+  position: absolute !important;
+  top: calc(50% - 25px);
+}

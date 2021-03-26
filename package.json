@@ -1,0 +1,68 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint:js": "eslint --ext \".js,.vue,.ts\" --ignore-path .gitignore .",
+    "lint:style": "stylelint \"**/*.{vue,css,scss}\" --ignore-path .gitignore",
+    "lint": "npm run lint:js && npm run lint:style",
+    "test:unit": "jest --watch -- --coverage",
+    "test:e2e": "cypress open --browser chrome",
+    "test:e2e-silent:": "cypress run"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.1",
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/composition-api": "^0.20.1",
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "core-js": "^3.8.3",
+    "eslint-plugin-cypress": "^2.11.2",
+    "nuxt": "^2.15.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@nuxt/types": "^2.14.12",
+    "@nuxt/typescript-build": "^2.0.4",
+    "@nuxtjs/eslint-config-typescript": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "@nuxtjs/vuetify": "^1.11.3",
+    "@vue/test-utils": "^1.1.2",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "cypress": "^6.5.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.1",
+    "stylelint": "^13.9.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "ts-jest": "^26.4.4",
+    "vue-jest": "^3.0.4"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue,ts}": [
+      "npm run lint:js",
+      "git add"
+    ],
+    "src/**/*.{css,scss,vue}": [
+      "npm run lint:style"
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  }
+}

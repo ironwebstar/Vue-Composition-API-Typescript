@@ -1,0 +1,5 @@
+nuxt:
+  container_name: challenge
+  build: '.'
+  ports:
+    - '3000:3000'

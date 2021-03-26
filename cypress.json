@@ -1,0 +1,11 @@
+{
+  "pluginsFile": "test/e2e/plugins/index.js",
+  "viewportWidth": 1270,
+  "viewportHeight": 800,
+  "baseUrl": "http://localhost:3000",
+  "numTestsKeptInMemory": 50,
+  "responseTimeout": 100000,
+  "pageLoadTimeout": 100000,
+  "env": {
+  }
+}
